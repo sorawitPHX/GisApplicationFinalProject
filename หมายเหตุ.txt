@@ -1,0 +1,9 @@
+เนื่องจากโปรเจคนี้ใช้ express จำเป็นต้องใช้ nodejs ในการรัน
+0. หากไม่มี nodejs ให้ติดตั้ง nodejs เสียก่อน (https://nodejs.org/en)
+1. ใช้ cmd รันคำสั่ง npm i
+2. ใช้ cmd รันคำสั้ง npm start สำหรับเปิด WebServer
+3. เข้าลิงก์ http://localhost:3000
+
+
+นายสรวิศ ไผ่พันธ์ sorawit.ph@kkumail.com
+นางสาวชนิดา ทองศรี chanida.thon@kkumail.com

@@ -1,0 +1,19 @@
+{
+  "name": "gisapplicationfinalproject",
+  "version": "1.0.0",
+  "description": "this is for 2567_CP353205 Geo-Informatics Application Development Final Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sorawit Phaiphan, Chanida Thongsri",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
