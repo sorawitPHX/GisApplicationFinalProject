@@ -7,6 +7,7 @@ const fetchLoginToken = async () => {
         const data = await response.json()
         if(data.token) {
             window.loginToken = data.token
+            esriConfig.apiKey = data.token
         }else {
             console.error(data.error)
         }

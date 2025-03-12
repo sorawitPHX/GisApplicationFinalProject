@@ -326,14 +326,16 @@ require([
 
         // left
         view.ui.remove("zoom")
-        view.ui.add(layerList, "top-left");
-        view.ui.add(editor, "top-left");
+        view.ui.add(new Expand({ view: view, content: layerList}), "top-left");
+        view.ui.add(new Expand({ view: view, content:  editor}), "top-left");
+        // view.ui.add(layerList, "top-left");
+        // view.ui.add(editor, "top-left");
         view.ui.add(sketchWidget, "bottom-left");
         // right
         view.ui.add(searchWidget, "top-right");
-        view.ui.add(new Home({ view: view }), "bottom-right");
-        view.ui.add(new Expand({ view: view, content: new BasemapGallery({ view: view }) }), "bottom-right");
-        view.ui.add(new Expand({ view: view, content: new Legend({ view: view }) }), "bottom-right");
+        view.ui.add(new Home({ view: view }), "top-right");
+        view.ui.add(new Expand({ view: view, content: new BasemapGallery({ view: view }) }), "top-right");
+        view.ui.add(new Expand({ view: view, content: new Legend({ view: view }) }), "top-right");
 
         // ⭐ ดัก event เมื่อวาด Polygon เสร็จ
         sketchWidget.on("create", function (event) {

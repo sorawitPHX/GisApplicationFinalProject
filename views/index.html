@@ -4,17 +4,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.ico">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://js.arcgis.com/4.27/esri/themes/light/main.css">
   <link rel="stylesheet" href="/css/arcgis.css">
+
+  <!-- Scripts -->
   <script src="/js/tailwindV4.js"></script>
   <script src="/js/esriApiKey.js"></script>
   <script src="https://js.arcgis.com/4.27/"></script>
+
+  <!-- Page Title -->
   <title>✈️ แผนที่ค้นหาสถานที่ท่องเที่ยวและที่พัก จ.ขอนแก่น</title>
+
+  <!-- Open Graph Meta Tags (Facebook, LINE, etc.) -->
+  <meta property="og:title" content="✈️ แผนที่ค้นหาสถานที่ท่องเที่ยวและที่พัก จ.ขอนแก่น">
+  <meta property="og:description" content="สำรวจสถานที่ท่องเที่ยวและที่พักในจังหวัดขอนแก่นผ่านแผนที่แบบอินเทอร์แอคทีฟที่ใช้งานง่าย">
+  <meta property="og:image" content="https://gis-application-final-project.vercel.app/images/thumbnail.png">
+  <meta property="og:url" content="https://gis-application-final-project.vercel.app">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card (สำหรับ Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="✈️ แผนที่ค้นหาสถานที่ท่องเที่ยวและที่พัก จ.ขอนแก่น">
+  <meta name="twitter:description" content="สำรวจสถานที่ท่องเที่ยวและที่พักในจังหวัดขอนแก่นผ่านแผนที่แบบอินเทอร์แอคทีฟที่ใช้งานง่าย">
+  <meta name="twitter:image" content="https://gis-application-final-project.vercel.app/images/thumbnail.png">
 </head>
 
 <body lang="th">
   <div class="h-screen flex justify-center">
-    <div class="fixed z-70 p-3 bg-sky-700 text-white opacity-90 rounded-2xl mt-2">✈️ แผนที่ค้นหาสถานที่ท่องเที่ยวและที่พัก จ.ขอนแก่น</div>
+    <div class="lg:inline hidden fixed z-70 p-3 bg-sky-700 text-white opacity-90 rounded-2xl mt-2">✈️ แผนที่ค้นหาสถานที่ท่องเที่ยวและที่พัก จ.ขอนแก่น</div>
     <div id="viewDiv"></div>
   </div>
   <div id="showtest"></div>
